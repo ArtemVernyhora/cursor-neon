@@ -1,0 +1,22 @@
+body {
+  background-color: black;
+}
+.neon-trail {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 100%;
+  background-color: white;
+  transform: translate(-1px, -1px);
+  will-change: transform;
+  animation: neon-trail 1s ease-in-out infinite;
+}
+@keyframes neon-trail {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translate(-1px, -1px) scale(2);
+    opacity: 0;
+  }
+}
